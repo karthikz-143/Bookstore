@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Session</title>
+    <style>
+      /* CSS for styling the payment session */
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      .payment-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      .payment-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .payment-row label {
+        flex: 1;
+      }
+
+      .payment-row input[type="text"],
+      .payment-row select {
+        flex: 2;
+      }
+
+      .payment-button {
+        display: block;
+        margin: 20px auto;
+        padding: 12px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .payment-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-container">
+      <h1>Payment Session</h1>
+      <form action="#" method="post">
+        <div class="payment-row">
+          <label for="card-holder-name">Card Holder Name:</label>
+          <input type="text" id="card-holder-name" name="card-holder-name" required>
+        </div>
+
+        <div class="payment-row">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required>
+        </div>
+
+        <div class="payment-row">
+          <label for="expiry-date">Expiry Date:</label>
+          <select id="expiry-date" name="expiry-date" required>
+            <option value="">-- Month --</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <select id="expiry-year" name="expiry-year" required>
+            <option value="">-- Year --</option>
+            <option value="01">2023</option>
+            <option value="02">2024</option>
+            <option value="03">2025</option>
+            <option value="04">2026</option>
+            <option value="05">2027</option>
+            <option value="06">2028</option>
+            <option value="07">2029</option>
+            <option value="08">2030</option>
+            <option value="09">2031</option>
+            <option value="10">2032</option>
+            <option value="11">2033</option>
+            <option value="12">2034</option>
+          </select>
+    
+		</div>
+        <div>	
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" name="cvv" required>
+        </div>
+        <div>
+        
+	  <right> <a href="thanku.html" class="btn">Submit Payment <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></right>
+      </form>
+    </div>
+  </body>
+  </html>
